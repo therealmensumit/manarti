@@ -150,6 +150,12 @@ p {
 }
 
 /* footer style */
+footer h4 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--purple);
+}
 footer p {
     color: #383838;
     font-weight: 500;
@@ -158,6 +164,7 @@ footer p {
 }
 footer a {
     color: var(--blue);
+    transition: all .3s;
 }
 footer a:hover svg path,
 footer a:hover {
