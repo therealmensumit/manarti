@@ -108,6 +108,17 @@ p {
     filter: blur(23.5px);
     z-index: -1;
     border-radius: 50%;
+    animation: pulse 10s linear infinite;
+}
+@keyframes pulse {
+    0% {
+        width: 500px;
+        height: 500px;
+    } 50% {
+        width: 800px;
+        height: 800px;
+    }
+    
 }
 
 .text-fill {
@@ -144,4 +155,23 @@ footer p {
     font-weight: 500;
     font-size: 16px;
     line-height: 126%;
+}
+footer a {
+    color: var(--blue);
+}
+footer a:hover svg path,
+footer a:hover {
+    fill: var(--orange);
+    color: var(--orange);
+}
+.links a {
+    color: #383838;
+}
+.icons-circle {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    background-color: rgb(175, 175, 175, .13);
+    border-radius: 50%;
 }
